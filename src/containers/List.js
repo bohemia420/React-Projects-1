@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { data as moviesJSON } from '../assets/data.json';
 
 import Card from '../components/Card/Card';
 
@@ -12,8 +13,8 @@ class List extends Component {
   }
 
   async componentDidMount() {
-    const movies = await fetch('../../assets/data.json');
-    const moviesJSON = await movies.json();
+    //const movies = await fetch('../../assets/data.json');
+    //const moviesJSON = await movies.json();
 
     if (moviesJSON) {
       this.setState({
